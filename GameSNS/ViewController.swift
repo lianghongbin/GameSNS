@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  GameSNS
 //
-//  Created by lianghongbin on 15/8/12.
+//  Created by lianghongbin on 15/8/4.
 //  Copyright (c) 2015年 lianghongbin. All rights reserved.
 //
 
@@ -10,16 +10,29 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
+    //var splashScreen:UIImageView!
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        //self.splashScreen = UIImageView(frame: self.view.frame)
+        //self.splashScreen.image = UIImage(named: "640x960")
+        //self.view.addSubview(self.splashScreen)
+        
+        //var removeSplashScreen = NSTimer.scheduledTimerWithTimeInterval(3.0, target: self, selector: "removeSP", userInfo: nil, repeats: false)
     }
-
-    override func didReceiveMemoryWarning() {
+    
+    //func removeSP()
+    //{
+    //    println(" REMOVE SP")
+    //    self.splashScreen.removeFromSuperview()
+    //}
+    
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
 
 }
 
