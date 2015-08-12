@@ -39,8 +39,6 @@ class RootViewController: UITabBarController {
         
         var my = MyViewController()
         nav4.viewControllers = [my]
-        
-        
 
         //self.tabBar.clipsToBounds = true
         self.viewControllers = [nav1, nav2, nav3, nav4]

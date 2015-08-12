@@ -16,7 +16,7 @@ class GameNavigationController : UINavigationController {
         self.tabBarItem.image = UIImage(named: "game")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
         self.tabBarItem.selectedImage = UIImage(named: "game_select")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
         self.tabBarItem.imageInsets = insets
-        self.navigationBar.barTintColor = viewBackgroundColor
+        self.navigationBar.barTintColor = barTintColor
         self.navigationBar.titleTextAttributes = titleDict as [NSObject : AnyObject]
         
         var lineView = UIView(frame: CGRect(x: 0, y: self.navigationBar.frame.maxY, width: self.view.frame.size.width, height: 2))
