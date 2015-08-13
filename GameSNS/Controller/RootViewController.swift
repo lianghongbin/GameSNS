@@ -9,39 +9,22 @@ import UIKit
 
 class RootViewController: UITabBarController {
     
+    var giftNavigation:UINavigationController!
+    var gameNavigation:UINavigationController!
+    var rankNavigation:UINavigationController!
+    var myNavigation:UINavigationController!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        
-        let nav1 = GiftNagivationController()
-        
-        let nav2 = UINavigationController()
-        nav2.tabBarItem.title = nil
-        nav2.tabBarItem.image = UIImage(named: "rank")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
-        nav2.tabBarItem.selectedImage = UIImage(named: "rank_select")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
-        nav2.tabBarItem.imageInsets = insets
-        nav2.navigationBar.barTintColor = barTintColor
-        nav2.navigationBar.titleTextAttributes = titleDict as [NSObject : AnyObject]
-        
-        var rank = RankViewController()
-        nav2.viewControllers = [rank]
-        
-        let nav3 = GameNavigationController()
-                
-        let nav4 = UINavigationController()
-        nav4.tabBarItem.title = nil
-        nav4.tabBarItem.image = UIImage(named: "me")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
-        nav4.tabBarItem.selectedImage = UIImage(named: "me_select")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
-        nav4.tabBarItem.imageInsets = insets
-        nav4.navigationBar.barTintColor = barTintColor
-        nav4.navigationBar.titleTextAttributes = titleDict as [NSObject : AnyObject]
-        
-        var my = MyViewController()
-        nav4.viewControllers = [my]
+        initGameView()
+        initGiftView()
+        initRankView()
+        initMyView()
 
         //self.tabBar.clipsToBounds = true
-        self.viewControllers = [nav1, nav2, nav3, nav4]
+        self.viewControllers = [giftNavigation, rankNavigation, gameNavigation, myNavigation]
     }
     
     override func viewWillLayoutSubviews()
@@ -52,5 +35,76 @@ class RootViewController: UITabBarController {
         self.tabBar.translucent = false
     }
     
+    func initGameView() {
+        gameNavigation = UINavigationController()
+        gameNavigation.tabBarItem.title = nil
+        gameNavigation.tabBarItem.image = UIImage(named: "game")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
+        gameNavigation.tabBarItem.selectedImage = UIImage(named: "game_select")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
+        gameNavigation.tabBarItem.imageInsets = insets
+        gameNavigation.navigationBar.barTintColor = barTintColor
+        gameNavigation.navigationBar.titleTextAttributes = titleDict as [NSObject : AnyObject]
+        
+        //line view
+        var lineView = UIView(frame: CGRect(x: 0, y: 64, width: self.view.frame.size.width, height: 2))
+        lineView.backgroundColor = lineBgColor
+        var gameView = GameViewController()
+        gameView.view.addSubview(lineView)
+        
+        gameNavigation.viewControllers = [gameView]
+    }
+    
+    func initGiftView() {
+        giftNavigation = UINavigationController()
+        giftNavigation.tabBarItem.title = nil
+        giftNavigation.tabBarItem.image = UIImage(named: "gift")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
+        giftNavigation.tabBarItem.selectedImage = UIImage(named: "gift_select")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
+        giftNavigation.tabBarItem.imageInsets = insets
+        giftNavigation.navigationBar.barTintColor = barTintColor
+        giftNavigation.navigationBar.titleTextAttributes = titleDict as [NSObject : AnyObject]
+        
+        //line view
+        var lineView = UIView(frame: CGRect(x: 0, y: 64, width: self.view.frame.size.width, height: 2))
+        lineView.backgroundColor = lineBgColor
+        var giftView = GiftViewController()
+        giftView.view.addSubview(lineView)
+        
+        giftNavigation.viewControllers = [giftView]
+    }
+    
+    func initRankView() {
+        rankNavigation = UINavigationController()
+        rankNavigation.tabBarItem.title = nil
+        rankNavigation.tabBarItem.image = UIImage(named: "rank")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
+        rankNavigation.tabBarItem.selectedImage = UIImage(named: "rank_select")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
+        rankNavigation.tabBarItem.imageInsets = insets
+        rankNavigation.navigationBar.barTintColor = barTintColor
+        rankNavigation.navigationBar.titleTextAttributes = titleDict as [NSObject : AnyObject]
+        
+        //line view
+        var lineView = UIView(frame: CGRect(x: 0, y: 64, width: self.view.frame.size.width, height: 2))
+        lineView.backgroundColor = lineBgColor
+        var rankView = RankViewController()
+        rankView.view.addSubview(lineView)
+        
+        rankNavigation.viewControllers = [rankView]
+    }
+    
+    func initMyView() {
+        myNavigation = UINavigationController()
+        myNavigation.tabBarItem.title = nil
+        myNavigation.tabBarItem.image = UIImage(named: "me")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
+        myNavigation.tabBarItem.selectedImage = UIImage(named: "me_select")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
+        myNavigation.tabBarItem.imageInsets = insets
+        myNavigation.navigationBar.barTintColor = barTintColor
+        myNavigation.navigationBar.titleTextAttributes = titleDict as [NSObject : AnyObject]
+        
+        //line view
+        var lineView = UIView(frame: CGRect(x: 0, y: 64, width: self.view.frame.size.width, height: 2))
+        lineView.backgroundColor = lineBgColor
+        var myView = MyViewController()
+        myView.view.addSubview(lineView)
+        
+        myNavigation.viewControllers = [myView]
+    }
 }
 

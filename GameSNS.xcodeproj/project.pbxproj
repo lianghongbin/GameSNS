@@ -94,10 +94,8 @@
 		8916F70C1B7B20B200C0C34F /* beforeWeb.png in Resources */ = {isa = PBXBuildFile; fileRef = 8916F6B61B7B20B200C0C34F /* beforeWeb.png */; };
 		8916F70D1B7B20B200C0C34F /* nextWeb.png in Resources */ = {isa = PBXBuildFile; fileRef = 8916F6B71B7B20B200C0C34F /* nextWeb.png */; };
 		8916F70E1B7B20B200C0C34F /* refreshWeb.png in Resources */ = {isa = PBXBuildFile; fileRef = 8916F6B81B7B20B200C0C34F /* refreshWeb.png */; };
-		8916F7141B7B42D400C0C34F /* GameNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8916F7131B7B42D400C0C34F /* GameNavigationController.swift */; };
 		89B1C9C61B7B0DAA00A3C89D /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B1C8541B7B0DA900A3C89D /* GameViewController.swift */; };
 		89B1C9C71B7B0DAA00A3C89D /* GiftInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B1C8551B7B0DA900A3C89D /* GiftInfoController.swift */; };
-		89B1C9C81B7B0DAA00A3C89D /* GiftNagivationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B1C8561B7B0DA900A3C89D /* GiftNagivationController.swift */; };
 		89B1C9C91B7B0DAA00A3C89D /* GiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B1C8571B7B0DA900A3C89D /* GiftViewController.swift */; };
 		89B1C9CA1B7B0DAA00A3C89D /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B1C8581B7B0DA900A3C89D /* MyViewController.swift */; };
 		89B1C9CB1B7B0DAA00A3C89D /* RankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B1C8591B7B0DA900A3C89D /* RankViewController.swift */; };
@@ -529,10 +527,8 @@
 		8916F6B61B7B20B200C0C34F /* beforeWeb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beforeWeb.png; sourceTree = "<group>"; };
 		8916F6B71B7B20B200C0C34F /* nextWeb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nextWeb.png; sourceTree = "<group>"; };
 		8916F6B81B7B20B200C0C34F /* refreshWeb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refreshWeb.png; sourceTree = "<group>"; };
-		8916F7131B7B42D400C0C34F /* GameNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameNavigationController.swift; sourceTree = "<group>"; };
 		89B1C8541B7B0DA900A3C89D /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		89B1C8551B7B0DA900A3C89D /* GiftInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftInfoController.swift; sourceTree = "<group>"; };
-		89B1C8561B7B0DA900A3C89D /* GiftNagivationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftNagivationController.swift; sourceTree = "<group>"; };
 		89B1C8571B7B0DA900A3C89D /* GiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftViewController.swift; sourceTree = "<group>"; };
 		89B1C8581B7B0DA900A3C89D /* MyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 		89B1C8591B7B0DA900A3C89D /* RankViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankViewController.swift; sourceTree = "<group>"; };
@@ -1083,9 +1079,7 @@
 			isa = PBXGroup;
 			children = (
 				89B1C8541B7B0DA900A3C89D /* GameViewController.swift */,
-				8916F7131B7B42D400C0C34F /* GameNavigationController.swift */,
 				89B1C8551B7B0DA900A3C89D /* GiftInfoController.swift */,
-				89B1C8561B7B0DA900A3C89D /* GiftNagivationController.swift */,
 				89B1C8571B7B0DA900A3C89D /* GiftViewController.swift */,
 				89B1C8581B7B0DA900A3C89D /* MyViewController.swift */,
 				89B1C8591B7B0DA900A3C89D /* RankViewController.swift */,
@@ -2372,7 +2366,6 @@
 				89C185A81B7B028600DA6E67 /* ViewController.swift in Sources */,
 				89B1CB0B1B7B0DAA00A3C89D /* GiftCell.swift in Sources */,
 				89B1C9CD1B7B0DAA00A3C89D /* Gift.swift in Sources */,
-				89B1C9C81B7B0DAA00A3C89D /* GiftNagivationController.swift in Sources */,
 				89B1C9CC1B7B0DAA00A3C89D /* RootViewController.swift in Sources */,
 				89B1C9C71B7B0DAA00A3C89D /* GiftInfoController.swift in Sources */,
 				89B1CB0D1B7B0E5600A3C89D /* Constants.swift in Sources */,
@@ -2384,7 +2377,6 @@
 				89B1CB0A1B7B0DAA00A3C89D /* FirstVC.swift in Sources */,
 				89B1C9C91B7B0DAA00A3C89D /* GiftViewController.swift in Sources */,
 				89B1C9D01B7B0DAA00A3C89D /* Status.swift in Sources */,
-				8916F7141B7B42D400C0C34F /* GameNavigationController.swift in Sources */,
 				89B1C9CB1B7B0DAA00A3C89D /* RankViewController.swift in Sources */,
 				89B1C9D21B7B0DAA00A3C89D /* TypeLabel.swift in Sources */,
 				89B1CB061B7B0DAA00A3C89D /* GiftCellHandler.swift in Sources */,
