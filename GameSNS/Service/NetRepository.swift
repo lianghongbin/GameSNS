@@ -11,7 +11,7 @@ import ObjectMapper
 
 class NetRepository<T:Mappable> {
     
-    var delegate:CellDelegate?
+    var delegate:DataDelegate?
     
     func requestHttp(urlString: String) {
 
@@ -24,7 +24,7 @@ class NetRepository<T:Mappable> {
             if let data = response.responseObject as? NSData {
                 let str = NSString(data: data, encoding: NSUTF8StringEncoding)
                 let jsonWrapper = Mapper<T>().map(str!)
-                self.delegate!.reloadTable(jsonWrapper!)
+                self.delegate!.process(jsonWrapper!)
             }
             
         })

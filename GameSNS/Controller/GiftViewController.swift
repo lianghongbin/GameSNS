@@ -11,7 +11,7 @@ import ObjectMapper
 import Kingfisher
 import ICSPullToRefresh
 
-class GiftViewController : UIViewController,UITableViewDelegate, UITableViewDataSource, CellDelegate {
+class GiftViewController : UIViewController,UITableViewDelegate, UITableViewDataSource, DataDelegate {
     
     let numOfPages = 3
     let pageWidth = 320
@@ -22,6 +22,7 @@ class GiftViewController : UIViewController,UITableViewDelegate, UITableViewData
     let myCache = ImageCache(name: "lhb_kk_cache")
     var refreshControl:UIRefreshControl!
     var repository:NetRepository<JsonArrayWrapper<Gift>>?
+    var focusRepository:NetRepository<JsonArrayWrapper<Focus>>?
     var url:String = "http://kk.7k7k.com/1_0/card/recommend?pagesize=10&pagenum=1&platform=ALL&searchType=0&token=45f3b67195bbd1087caa77b11478e0d1"
     
     override func loadView() {
@@ -61,8 +62,15 @@ class GiftViewController : UIViewController,UITableViewDelegate, UITableViewData
     func initScrollView() {
         //scroll view
         self.automaticallyAdjustsScrollViewInsets = false
+        focusRepository = NetRepository<JsonArrayWrapper<Focus>>()
+        focusRepository?.requestHttp("http://kk.7k7k.com/1_0/focus/all?platform=android&token=8d2816d24132435bde71b4eb07b9bd3c")
         var imageArray: [UIImage!] = [UIImage(named: "first.jpg"), UIImage(named: "second.jpg"), UIImage(named: "third.jpg")]
-        var circleView = CircleView(frame: CGRectMake(0, 64+2, self.view.frame.size.width, 200), imageArray: imageArray)
+        var circleView = CircleView(frame: CGRectMake(0, 64+2, self.view.frame.size.width, 200))
+    
+        var focusDelegate = FocusDelegate()
+        focusDelegate.circleView = circleView
+        focusRepository!.delegate = focusDelegate
+        
         circleView.backgroundColor = UIColor.orangeColor()
         self.view.addSubview(circleView)
     }
@@ -173,7 +181,7 @@ class GiftViewController : UIViewController,UITableViewDelegate, UITableViewData
         return 98;
     }
 
-    func reloadTable(data: Mappable) {
+    func process(data: Mappable) {
         println("request complete")
         if let jsonArrayWrapper = data as? JsonArrayWrapper<Gift> {
             self.gifts = jsonArrayWrapper.data!

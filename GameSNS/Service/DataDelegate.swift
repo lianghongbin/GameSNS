@@ -9,7 +9,7 @@
 import UIKit
 import ObjectMapper
 
-protocol CellDelegate {
+protocol DataDelegate {
     
-    func reloadTable(data:Mappable)
+    func process(data:Mappable)
 }

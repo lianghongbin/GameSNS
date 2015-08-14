@@ -412,7 +412,7 @@
 		89B1CB021B7B0DAA00A3C89D /* bg_nor.png in Resources */ = {isa = PBXBuildFile; fileRef = 89B1C9B91B7B0DA900A3C89D /* bg_nor.png */; };
 		89B1CB031B7B0DAA00A3C89D /* bg_denglu_nor.png in Resources */ = {isa = PBXBuildFile; fileRef = 89B1C9BB1B7B0DA900A3C89D /* bg_denglu_nor.png */; };
 		89B1CB041B7B0DAA00A3C89D /* bg_nor.png in Resources */ = {isa = PBXBuildFile; fileRef = 89B1C9BC1B7B0DAA00A3C89D /* bg_nor.png */; };
-		89B1CB051B7B0DAA00A3C89D /* CellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B1C9BE1B7B0DAA00A3C89D /* CellDelegate.swift */; };
+		89B1CB051B7B0DAA00A3C89D /* DataDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B1C9BE1B7B0DAA00A3C89D /* DataDelegate.swift */; };
 		89B1CB061B7B0DAA00A3C89D /* GiftCellHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B1C9BF1B7B0DAA00A3C89D /* GiftCellHandler.swift */; };
 		89B1CB071B7B0DAA00A3C89D /* Handler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B1C9C01B7B0DAA00A3C89D /* Handler.swift */; };
 		89B1CB081B7B0DAA00A3C89D /* NetRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B1C9C11B7B0DAA00A3C89D /* NetRepository.swift */; };
@@ -426,6 +426,8 @@
 		89C185AD1B7B028700DA6E67 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89C185AC1B7B028700DA6E67 /* Images.xcassets */; };
 		89C185B01B7B028700DA6E67 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89C185AE1B7B028700DA6E67 /* LaunchScreen.xib */; };
 		89C185BC1B7B028700DA6E67 /* GameSNSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C185BB1B7B028700DA6E67 /* GameSNSTests.swift */; };
+		89FF04981B7D93B100AF8A72 /* Focus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FF04971B7D93B100AF8A72 /* Focus.swift */; };
+		89FF049C1B7DBF5800AF8A72 /* FocusDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FF049B1B7DBF5800AF8A72 /* FocusDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -845,7 +847,7 @@
 		89B1C9B91B7B0DA900A3C89D /* bg_nor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_nor.png; sourceTree = "<group>"; };
 		89B1C9BB1B7B0DA900A3C89D /* bg_denglu_nor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_denglu_nor.png; sourceTree = "<group>"; };
 		89B1C9BC1B7B0DAA00A3C89D /* bg_nor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_nor.png; sourceTree = "<group>"; };
-		89B1C9BE1B7B0DAA00A3C89D /* CellDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellDelegate.swift; sourceTree = "<group>"; };
+		89B1C9BE1B7B0DAA00A3C89D /* DataDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataDelegate.swift; sourceTree = "<group>"; };
 		89B1C9BF1B7B0DAA00A3C89D /* GiftCellHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftCellHandler.swift; sourceTree = "<group>"; };
 		89B1C9C01B7B0DAA00A3C89D /* Handler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Handler.swift; sourceTree = "<group>"; };
 		89B1C9C11B7B0DAA00A3C89D /* NetRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetRepository.swift; sourceTree = "<group>"; };
@@ -863,6 +865,8 @@
 		89C185B51B7B028700DA6E67 /* GameSNSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameSNSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89C185BA1B7B028700DA6E67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89C185BB1B7B028700DA6E67 /* GameSNSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSNSTests.swift; sourceTree = "<group>"; };
+		89FF04971B7D93B100AF8A72 /* Focus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Focus.swift; sourceTree = "<group>"; };
+		89FF049B1B7DBF5800AF8A72 /* FocusDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusDelegate.swift; sourceTree = "<group>"; };
 		A845C8505CEFCD7024C89A1B /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -1092,6 +1096,7 @@
 			isa = PBXGroup;
 			children = (
 				89B1C85C1B7B0DA900A3C89D /* Gift.swift */,
+				89FF04971B7D93B100AF8A72 /* Focus.swift */,
 				89B1C85D1B7B0DA900A3C89D /* JsonArrayWrapper.swift */,
 				89B1C85E1B7B0DA900A3C89D /* JsonWrapper.swift */,
 				89B1C85F1B7B0DA900A3C89D /* Status.swift */,
@@ -1738,10 +1743,11 @@
 		89B1C9BD1B7B0DAA00A3C89D /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				89B1C9BE1B7B0DAA00A3C89D /* CellDelegate.swift */,
+				89B1C9BE1B7B0DAA00A3C89D /* DataDelegate.swift */,
 				89B1C9BF1B7B0DAA00A3C89D /* GiftCellHandler.swift */,
 				89B1C9C01B7B0DAA00A3C89D /* Handler.swift */,
 				89B1C9C11B7B0DAA00A3C89D /* NetRepository.swift */,
+				89FF049B1B7DBF5800AF8A72 /* FocusDelegate.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -2373,15 +2379,17 @@
 				89B1CB071B7B0DAA00A3C89D /* Handler.swift in Sources */,
 				89B1C9C61B7B0DAA00A3C89D /* GameViewController.swift in Sources */,
 				89B1C9CF1B7B0DAA00A3C89D /* JsonWrapper.swift in Sources */,
-				89B1CB051B7B0DAA00A3C89D /* CellDelegate.swift in Sources */,
+				89B1CB051B7B0DAA00A3C89D /* DataDelegate.swift in Sources */,
 				89B1CB0A1B7B0DAA00A3C89D /* FirstVC.swift in Sources */,
 				89B1C9C91B7B0DAA00A3C89D /* GiftViewController.swift in Sources */,
 				89B1C9D01B7B0DAA00A3C89D /* Status.swift in Sources */,
 				89B1C9CB1B7B0DAA00A3C89D /* RankViewController.swift in Sources */,
 				89B1C9D21B7B0DAA00A3C89D /* TypeLabel.swift in Sources */,
 				89B1CB061B7B0DAA00A3C89D /* GiftCellHandler.swift in Sources */,
+				89FF049C1B7DBF5800AF8A72 /* FocusDelegate.swift in Sources */,
 				89B1C9D11B7B0DAA00A3C89D /* Type.swift in Sources */,
 				89B1CB091B7B0DAA00A3C89D /* CircleView.swift in Sources */,
+				89FF04981B7D93B100AF8A72 /* Focus.swift in Sources */,
 				89C185A61B7B028600DA6E67 /* AppDelegate.swift in Sources */,
 				89B1C9CE1B7B0DAA00A3C89D /* JsonArrayWrapper.swift in Sources */,
 				89B1CB081B7B0DAA00A3C89D /* NetRepository.swift in Sources */,
